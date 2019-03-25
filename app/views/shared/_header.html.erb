@@ -1,0 +1,28 @@
+<header class="header d-flex flex-row justify-content-end align-items-center">
+
+	<!-- Logo -->
+	<div class="logo_container mr-auto">
+		<div class="logo">
+			<a href="<%= root_path %>"><img src="assets/main-logo.jpg" style="width: 100% !important;"/></a>
+		</div>
+	</div>
+
+	<!-- Main Navigation -->
+	<nav class="main_nav justify-self-end">
+		<ul class="nav_items">
+			<li class="<%= current_class?(root_path) %>"><a href="<%= root_path %>"><span>home</span></a></li>
+			<li><a href="blog.html"><span>About us</span></a></li>
+			<li><a href="services.html"><span>services</span></a></li>
+			<li class="<%= current_class?(gallery_path) %>"><a href="<%= gallery_path %>"><span>Gallery</span></a></li>
+			<li><a href="elements.html"><span>Menu</span></a></li>
+			<li class="<%= current_class?(contact_path) %>"><a href="<%= contact_path %>"><span>contact</span></a></li>
+		</ul>
+	</nav>
+
+	<!-- Hamburger -->
+	<div class="hamburger_container">
+		<span class="hamburger_text">Menu</span>
+		<span class="hamburger_icon"></span>
+	</div>
+
+</header>

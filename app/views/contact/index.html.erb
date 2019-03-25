@@ -1,0 +1,169 @@
+<!-- Menu -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="assets/bootstrap4/bootstrap.min.css">
+<link href="assets/fontawesome-free-5.0.1/css/fontawesome-all.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="assets/OwlCarousel2-2.2.1/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="assets/OwlCarousel2-2.2.1/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="assets/OwlCarousel2-2.2.1/animate.css">
+<link rel="stylesheet" type="text/css" href="assets/js-flickr-gallery-1.24/js-flickr-gallery.css">
+<link href="assets/colorbox/colorbox.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="assets/contact_styles.css">
+<link rel="stylesheet" type="text/css" href="assets/contact_responsive.css">
+
+<div class="fs_menu_overlay"></div>
+<div class="fs_menu_container">
+	<div class="fs_menu_shapes"><img src="assets/menu_shapes.png" alt=""></div>
+	<nav class="fs_menu_nav">
+		<ul class="fs_menu_list">
+			<li><a href="#"><span><span>H</span>Home</span></a></li>
+			<li><a href="#"><span><span>S</span>Services</span></a></li>
+			<li><a href="#"><span><span>E</span>Elements</span></a></li>
+			<li><a href="#"><span><span>B</span>Blog</span></a></li>
+			<li><a href="#"><span><span>C</span>Contact</span></a></li>
+		</ul>
+	</nav>
+	<div class="fs_social_container d-flex flex-row justify-content-end align-items-center">
+		<ul class="fs_social">
+			<li><a href="#"><i class="fab fa-pinterest trans_300"></i></a></li>
+			<li><a href="#"><i class="fab fa-facebook-f trans_300"></i></a></li>
+			<li><a href="#"><i class="fab fa-twitter trans_300"></i></a></li>
+			<li><a href="#"><i class="fab fa-dribbble trans_300"></i></a></li>
+			<li><a href="#"><i class="fab fa-behance trans_300"></i></a></li>
+			<li><a href="#"><i class="fab fa-linkedin-in trans_300"></i></a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- Home -->
+
+<div class="home prlx_parent">
+
+	<!-- Parallax Background -->
+	<div class="home_background prlx" style="background-image:url(assets/blog_background.jpg)"></div>
+	<div class="services_page_shapes" style="background-image:url(assets/services_page_shapes.png)"></div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="home_content">
+					<h1>Contact</h1>
+					<span>get in touch</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="home_social_container d-flex flex-row justify-content-end align-items-center">
+	<ul class="home_social">
+		<li><a href="#"><i class="fab fa-pinterest trans_300"></i></a></li>
+		<li><a href="#"><i class="fab fa-facebook-f trans_300"></i></a></li>
+		<li><a href="#"><i class="fab fa-twitter trans_300"></i></a></li>
+		<li><a href="#"><i class="fab fa-dribbble trans_300"></i></a></li>
+		<li><a href="#"><i class="fab fa-behance trans_300"></i></a></li>
+		<li><a href="#"><i class="fab fa-linkedin-in trans_300"></i></a></li>
+	</ul>
+</div>	
+
+<!-- Contact Content -->
+
+<div class="contact_content">
+	
+	<div class="container">
+		<div class="row">
+			
+			<div class="col-lg-8">
+				<div class="contact_main_content">
+
+					<div class="contact_subtitle">contact us</div>
+					
+					<!-- Contact Us Form -->
+					<div class="contact_form_container">
+						<form id="reply_form" action="post">
+							<div>
+								<input id="contact_form_name" class="input_field contact_form_name" type="text" placeholder="Name" required="required" data-error="Name is required.">
+								<input id="contact_form_email" class="input_field contact_form_email" type="email" placeholder="E-mail" required="required" data-error="Valid email is required.">
+								<input id="contact_form_subject" class="input_field contact_form_subject" type="text" placeholder="Subject" required="required" data-error="Subject is required.">
+								<textarea id="contact_form_message" class="text_field contact_form_message" name="message"  placeholder="Message" rows="4" required data-error="Please, write us a message."></textarea>
+							</div>
+							<div>
+								<button id="contact_form_submit" type="submit" class="contact_submit_btn trans_300" value="Submit">
+									send<img src="assets/arrow_right.svg" alt="">
+								</button>
+							</div>
+
+						</form>
+					</div>
+
+				</div>
+			</div>
+			
+			<!-- Sidebar -->
+			<div class="col-lg-4">
+				<div class="contact_sidebar">
+					
+					<!-- Contact Info -->
+					<div class="sidebar_section">
+						<div class="sidebar_contact_info">
+							<div class="sidebar_title">contact info</div>
+							<ul>
+								<li><%= @info.address %></li>
+								<li><%= @info.email_address %></li>
+								<li><%= @info.primary_contact_number %></li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+
+		<!-- Google Map Container -->
+
+		<div class="row">
+			<div class="col">
+				<iframe width="800" height="450" frameborder="0" style="border:0"
+					src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDpvn5KlH4fLLLlCWxVZaqfxXa-Mj2UTzI&q=22.72766309,75.8301041"
+					allowfullscreen>
+				</iframe>
+			</div>
+		</div>
+
+</div>
+
+<!-- Contact -->
+
+<div class="contact prlx_parent">
+	<div class="contact_background prlx" style="background-image:url(assets/contact_background.jpg)"></div>
+	<div class="contact_shapes"><img src="assets/contact_shape.png" alt=""></div>
+	<div class="container">
+		
+		<div class="row">
+			<div class="col-lg-6 offset-lg-3 text-center section_title contact_title">
+				<h2>let's work together<span>z</span></h2>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-lg-10 offset-lg-1 text-center contact_text">
+				<p>Dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum, quam tincidunt venen atis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum, quam tincidunt venenatis ultrices, est libero mattis ante, ac consectetur diam neque eget quam.</p>
+				<div class="button contact_button">
+					<a href="contact.html" class="d-flex flex-row align-items-center justify-content-center">contact<img src="assets/arrow_right.svg" alt=""></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="assets/jquery-3.2.1.min.js"></script>
+<script src="asstes/bootstrap4/popper.js"></script>
+<script src="assets/bootstrap4/bootstrap.min.js"></script>
+<script src="assets/greensock/TweenMax.min.js"></script>
+<script src="assets/greensock/TimelineMax.min.js"></script>
+<script src="assets/scrollmagic/ScrollMagic.min.js"></script>
+<script src="assets/greensock/animation.gsap.min.js"></script>
+<script src="assets/greensock/ScrollToPlugin.min.js"></script>
+<script src="assets/progressbar/progressbar.min.js"></script>
+<script src="assets/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+<script src="assets/easing/easing.js"></script>
+<script src="assets/contact_custom.js"></script>
